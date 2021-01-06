@@ -6,12 +6,24 @@
 	<fileSets>
 		<fileSet filtered="true" packaged="true">
 			<directory>src/main/assembly</directory>
+			<includes>
+				<include>*.xml</include>
+			</includes>
 		</fileSet>
 		<fileSet>
 			<directory>config</directory>
+			<includes>
+				<include>*</include>
+			</includes>
 		</fileSet>
 		<fileSet>
-			<directory>Dockerfile</directory>
+			<directory>/</directory>
+			<includes>
+				<include>DockerFile</include>
+			</includes>
 		</fileSet>
 	</fileSets>
+	<requiredProperties>
+		<requiredProperty key="docker.repo"></requiredProperty>
+	</requiredProperties>
 </archetype-descriptor>

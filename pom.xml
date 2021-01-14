@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.paultegelaar.docker</groupId>
 	<artifactId>talend-runtime-archetype</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.5</version>
 	<packaging>maven-archetype</packaging>
 	<name>talend-docker-runtime-archetype</name>
 	<description>Talend Runtime Docker container archetype</description>
@@ -73,7 +73,7 @@
 		<connection>scm:git:https://github.com/rjptegelaar/talend-runtime-archetype.git</connection>
 		<developerConnection>scm:git:git@github.com:rjptegelaar/talend-runtime-archetype.git</developerConnection>
 		<url>https://github.com/rjptegelaar/talend-runtime-archetype.git</url>
-		<tag>HEAD</tag>
+		<tag>talend-runtime-archetype-0.0.5</tag>
 	</scm>
 	<distributionManagement>
 		<repository>

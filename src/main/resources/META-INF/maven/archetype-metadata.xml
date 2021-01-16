@@ -7,10 +7,10 @@
 		<fileSet filtered="false" packaged="false">
 			<directory>src/main/assembly</directory>
 			<includes>
-				<include>talend-accp.xml*</include>
-				<include>talend-dev.xml*</include>
-				<include>talend-prod.xml*</include>
-				<include>talend-test.xml*</include>
+				<include>talend-accp.xml</include>
+				<include>talend-dev.xml</include>
+				<include>talend-prod.xml</include>
+				<include>talend-test.xml</include>
 			</includes>
 		</fileSet>
 		<fileSet filtered="false" packaged="false">

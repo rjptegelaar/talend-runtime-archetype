@@ -22,7 +22,7 @@
 		<fileSet filtered="true" packaged="false" >
 			<directory>src/main/docker</directory>			
 			<includes>
-				<include>DockerFile</include>
+				<include>**/Dockerfile</include>
 			</includes>
 		</fileSet>
 	</fileSets>

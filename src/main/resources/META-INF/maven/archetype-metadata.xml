@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
 	name="talend-runtime-archetype">
 	<fileSets>
-		<fileSet filtered="true" packaged="true">
+		<fileSet filtered="true">
 			<directory>src/main/assembly</directory>
 			<includes>
 				<include>talend-accp.xml</include>
@@ -13,31 +13,19 @@
 				<include>talend-test.xml</include>
 			</includes>
 		</fileSet>
-		<fileSet filtered="true" packaged="true">
+		<fileSet filtered="false" packaged="false">
 			<directory>config/accp</directory>			
-			<includes>
-				<include>*</include>
-			</includes>
 		</fileSet>
-		<fileSet filtered="true" packaged="true">			
+		<fileSet filtered="false" packaged="false">			
 			<directory>config/dev</directory>
-			<includes>
-				<include>*</include>
-			</includes>
 		</fileSet>
-		<fileSet filtered="true" packaged="true">
+		<fileSet filtered="false" packaged="false">
 			<directory>config/prod</directory>
-			<includes>
-				<include>*</include>
-			</includes>
 		</fileSet>
-		<fileSet filtered="true" packaged="true">
+		<fileSet filtered="false" packaged="false">
 			<directory>config/test</directory>
-			<includes>
-				<include>*</include>
-			</includes>
 		</fileSet>
-		<fileSet filtered="true" packaged="true">
+		<fileSet filtered="false" packaged="false" >
 			<directory>/</directory>			
 			<includes>
 				<include>DockerFile</include>

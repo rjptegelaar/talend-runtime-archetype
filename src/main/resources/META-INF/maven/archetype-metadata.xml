@@ -10,7 +10,7 @@
 				<include>talend-test.xml</include>
 			</includes>			
 		</fileSet>		
-		<fileSet filtered="true" packaged="false">
+		<fileSet filtered="false" packaged="false">
 			<directory>config</directory>					
 			<includes>
 				<include>dev</include>
@@ -20,7 +20,7 @@
 			</includes>
 		</fileSet>
 		<fileSet filtered="true" packaged="false" >
-			<directory></directory>			
+			<directory>/</directory>			
 			<includes>
 				<include>DockerFile</include>
 			</includes>

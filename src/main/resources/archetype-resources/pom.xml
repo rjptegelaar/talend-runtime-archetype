@@ -4,6 +4,9 @@
   <groupId>${groupId}</groupId>
   <artifactId>${artifactId}</artifactId>
   <version>${version}</version>
+  <properties>
+   <docker.repo>docker.io/paultegelaar</docker.repo>
+ </properties>
   <profiles>
 		<profile>
 			<id>dev</id>

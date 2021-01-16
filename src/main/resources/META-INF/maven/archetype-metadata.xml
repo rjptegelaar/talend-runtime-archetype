@@ -4,20 +4,23 @@
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
 	name="talend-runtime-archetype">
 	<fileSets>
-		<fileSet filtered="true" packaged="true">
-			<directory>src/main/assembly</directory>
-			<includes>
-				<include>*.xml</include>
-			</includes>
-		</fileSet>
 		<fileSet>
-			<directory>config</directory>
+			<directory>src/main/assembly</directory>
 			<includes>
 				<include>*</include>
 			</includes>
 		</fileSet>
 		<fileSet>
-			<directory>/</directory>
+			<directory>config/accp</directory>
+			<directory>config/dev</directory>
+			<directory>config/prod</directory>
+			<directory>config/test</directory>
+			<includes>
+				<include>*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>/</directory>			
 			<includes>
 				<include>DockerFile</include>
 			</includes>

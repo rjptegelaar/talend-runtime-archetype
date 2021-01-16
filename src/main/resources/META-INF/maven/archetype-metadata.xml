@@ -27,6 +27,6 @@
 		</fileSet>
 	</fileSets>
 	<requiredProperties>
-		<requiredProperty key="docker.repo"></requiredProperty>
+		<requiredProperty key="docker.repo"></requiredProperty>	
 	</requiredProperties>
 </archetype-descriptor>

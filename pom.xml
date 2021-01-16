@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.paultegelaar.docker</groupId>
 	<artifactId>talend-runtime-archetype</artifactId>
-	<version>0.1.7-SNAPSHOT</version>
+	<version>0.1.8-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
 	<name>talend-docker-runtime-archetype</name>
 	<description>Talend Runtime Docker container archetype</description>

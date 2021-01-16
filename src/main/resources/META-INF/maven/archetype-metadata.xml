@@ -11,10 +11,10 @@
 				<include>talend-dev.xml</include>
 				<include>talend-prod.xml</include>
 				<include>talend-test.xml</include>
-			</includes>
+			</includes>			
 		</fileSet>
 		<fileSet filtered="false" packaged="false">
-			<directory>config</directory>			
+			<directory>config</directory>					
 			<includes>
 				<include>dev</include>
 				<include>test</include>
@@ -25,7 +25,7 @@
 		<fileSet filtered="false" packaged="false" >
 			<directory></directory>			
 			<includes>
-				<include>DockerFile*</include>
+				<include>DockerFile</include>
 			</includes>
 		</fileSet>
 	</fileSets>

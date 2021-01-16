@@ -7,13 +7,31 @@
 		<fileSet filtered="true" packaged="true">
 			<directory>src/main/assembly</directory>
 			<includes>
+				<include>talend-accp.xml</include>
+				<include>talend-dev.xml</include>
+				<include>talend-prod.xml</include>
+				<include>talend-test.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true">
+			<directory>config/accp</directory>			
+			<includes>
+				<include>*</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true">			
+			<directory>config/dev</directory>
+			<includes>
 				<include>*</include>
 			</includes>
 		</fileSet>
 		<fileSet filtered="true" packaged="true">
-			<directory>config/accp</directory>
-			<directory>config/dev</directory>
 			<directory>config/prod</directory>
+			<includes>
+				<include>*</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true">
 			<directory>config/test</directory>
 			<includes>
 				<include>*</include>

@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
 	name="talend-runtime-archetype">
 	<fileSets>
-		<!--<fileSet filtered="false" packaged="false">
+		<fileSet filtered="false" packaged="false">
 			<directory>src/main/assembly</directory>
 			<includes>
 				<include>talend-accp.xml</include>
@@ -12,7 +12,7 @@
 				<include>talend-prod.xml</include>
 				<include>talend-test.xml</include>
 			</includes>			
-		</fileSet>  -->
+		</fileSet>
 		<fileSet filtered="false" packaged="false">
 			<directory>config</directory>					
 			<includes>
@@ -22,12 +22,12 @@
 				<include>prod</include>
 			</includes>
 		</fileSet>
-		<!--  <fileSet filtered="false" packaged="false" >
+		<fileSet filtered="false" packaged="false" >
 			<directory></directory>			
 			<includes>
 				<include>DockerFile</include>
 			</includes>
-		</fileSet>-->
+		</fileSet>
 	</fileSets>
 	<requiredProperties>
 		<requiredProperty key="docker.repo"></requiredProperty>

@@ -20,13 +20,13 @@
 			</includes>
 		</fileSet>
 		<fileSet filtered="true" packaged="false" >
-			<directory>/</directory>			
+			<directory>src/main/docker</directory>			
 			<includes>
 				<include>DockerFile</include>
 			</includes>
 		</fileSet>
 	</fileSets>
 	<requiredProperties>
-		<requiredProperty key="docker.repo"></requiredProperty>
+		<requiredProperty key="dockerrepo"></requiredProperty>
 	</requiredProperties>
 </archetype-descriptor>

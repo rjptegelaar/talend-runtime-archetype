@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
 	name="talend-runtime-archetype">
 	<fileSets>
-		<fileSet filtered="true">
+		<fileSet filtered="false" packaged="false">
 			<directory>src/main/assembly</directory>
 			<includes>
 				<include>talend-accp.xml</include>
@@ -14,16 +14,13 @@
 			</includes>
 		</fileSet>
 		<fileSet filtered="false" packaged="false">
-			<directory>config/accp</directory>			
-		</fileSet>
-		<fileSet filtered="false" packaged="false">			
-			<directory>config/dev</directory>
-		</fileSet>
-		<fileSet filtered="false" packaged="false">
-			<directory>config/prod</directory>
-		</fileSet>
-		<fileSet filtered="false" packaged="false">
-			<directory>config/test</directory>
+			<directory>config</directory>			
+			<includes>
+				<include>dev</include>
+				<include>test</include>
+				<include>accp</include>
+				<include>prod</include>
+			</includes>
 		</fileSet>
 		<fileSet filtered="false" packaged="false" >
 			<directory>/</directory>			

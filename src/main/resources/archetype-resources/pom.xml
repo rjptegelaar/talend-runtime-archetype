@@ -5,7 +5,7 @@
   <artifactId>${artifactId}</artifactId>
   <version>${version}</version>
   <properties>
-   <docker.repo/>
+   <docker.repo></docker.repo>
  </properties>
   <profiles>
 		<profile>

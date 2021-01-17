@@ -26,7 +26,4 @@
 			</includes>
 		</fileSet>
 	</fileSets>
-	<requiredProperties>
-		<requiredProperty key="docker.repo"></requiredProperty>	
-	</requiredProperties>
 </archetype-descriptor>

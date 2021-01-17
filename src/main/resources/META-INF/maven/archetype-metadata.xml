@@ -20,7 +20,7 @@
 			</includes>
 		</fileSet>
 		<fileSet filtered="true" packaged="false" >
-			<directory>src/main/docker</directory>			
+			<directory></directory>			
 			<includes>
 				<include>**/Dockerfile</include>
 			</includes>

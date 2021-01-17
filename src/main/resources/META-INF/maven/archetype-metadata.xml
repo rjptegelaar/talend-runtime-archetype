@@ -11,13 +11,16 @@
 			</includes>			
 		</fileSet>		
 		<fileSet filtered="false" packaged="false">
-			<directory>config</directory>					
-			<includes>
-				<include>dev</include>
-				<include>test</include>
-				<include>accp</include>
-				<include>prod</include>
-			</includes>
+			<directory>config/dev</directory>								
+		</fileSet>
+		<fileSet filtered="false" packaged="false">
+			<directory>config/accp</directory>								
+		</fileSet>
+		<fileSet filtered="false" packaged="false">
+			<directory>config/test</directory>								
+		</fileSet>
+		<fileSet filtered="false" packaged="false">
+			<directory>config/prod</directory>								
 		</fileSet>
 		<fileSet filtered="true" packaged="false" >
 			<directory></directory>			

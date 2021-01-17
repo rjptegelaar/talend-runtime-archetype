@@ -1,13 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>${groupId}</groupId>
-  <artifactId>${artifactId}</artifactId>
-  <version>${version}</version>
-  <properties>
-   <docker.repo></docker.repo>
- </properties>
-  <profiles>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>${groupId}</groupId>
+	<artifactId>${artifactId}</artifactId>
+	<version>${version}</version>
+	<properties>
+		<docker.repo></docker.repo>
+	</properties>
+	<profiles>
 		<profile>
 			<id>dev</id>
 			<activation>
@@ -29,9 +30,17 @@
 							</execution>
 						</executions>
 						<configuration>
-							<repository>${dockerrepo}/dev${project.artifactId}</repository>
+							<repository>${docker.repo}/dev${project.artifactId}</repository>
 							<tag>${project.version}</tag>
 						</configuration>
+						<dependencies>
+							<dependency>
+								<groupId>javax.activation</groupId>
+								<artifactId>javax.activation-api</artifactId>
+								<version>1.2.0</version>
+								<scope>compile</scope>
+							</dependency>
+						</dependencies>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -48,7 +57,7 @@
 						<configuration>
 							<descriptor>src/main/assembly/talend-dev.xml</descriptor>
 							<finalName>talend</finalName>
-							<appendAssemblyId>false</appendAssemblyId>														
+							<appendAssemblyId>false</appendAssemblyId>
 						</configuration>
 					</plugin>
 				</plugins>
@@ -75,6 +84,14 @@
 							<repository>${docker.repo}/test${project.artifactId}</repository>
 							<tag>${project.version}</tag>
 						</configuration>
+						<dependencies>
+							<dependency>
+								<groupId>javax.activation</groupId>
+								<artifactId>javax.activation-api</artifactId>
+								<version>1.2.0</version>
+								<scope>compile</scope>
+							</dependency>
+						</dependencies>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -92,8 +109,16 @@
 							<descriptor>src/main/assembly/talend-test.xml</descriptor>
 							<finalName>talend</finalName>
 							<appendAssemblyId>false</appendAssemblyId>
-														
+
 						</configuration>
+						<dependencies>
+							<dependency>
+								<groupId>javax.activation</groupId>
+								<artifactId>javax.activation-api</artifactId>
+								<version>1.2.0</version>
+								<scope>compile</scope>
+							</dependency>
+						</dependencies>
 					</plugin>
 				</plugins>
 			</build>
@@ -120,6 +145,14 @@
 							<repository>${docker.repo}/accp${project.artifactId}</repository>
 							<tag>${project.version}</tag>
 						</configuration>
+						<dependencies>
+							<dependency>
+								<groupId>javax.activation</groupId>
+								<artifactId>javax.activation-api</artifactId>
+								<version>1.2.0</version>
+								<scope>compile</scope>
+							</dependency>
+						</dependencies>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -164,6 +197,14 @@
 							<repository>${docker.repo}/${project.artifactId}</repository>
 							<tag>${project.version}</tag>
 						</configuration>
+						<dependencies>
+							<dependency>
+								<groupId>javax.activation</groupId>
+								<artifactId>javax.activation-api</artifactId>
+								<version>1.2.0</version>
+								<scope>compile</scope>
+							</dependency>
+						</dependencies>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
